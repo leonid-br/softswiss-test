@@ -1,0 +1,65 @@
+// ======= СБРОС БРАУЗЕРНЫХ СТИЛЕЙ (RESET) =======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Убираем стандартные стили списков
+ul,
+ol {
+    list-style: none;
+}
+
+// Убираем стандартные стили ссылок
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Убираем стандартное выделение у кнопок и полей ввода
+button,
+input,
+textarea {
+    border: none;
+    background: none;
+    outline: none;
+    font-family: inherit;
+}
+
+// Обнуляем шрифты заголовков
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: inherit;
+}
+
+// Убираем стандартное поведение кнопок
+button {
+    cursor: pointer;
+}
+
+// Убираем дополнительные отступы у изображений
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// ======= БАЗОВЫЕ НАСТРОЙКИ BODY =======
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+}
+
+// ======= АДАПТИВНОСТЬ =======
+html {
+    scroll-behavior: smooth; // Плавная прокрутка
+}
