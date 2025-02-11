@@ -1,4 +1,5 @@
 import { AboutSection } from './components/aboutSection/AboutSection';
+import { Container } from './components/common/container/Container';
 
 import { Footer } from './components/footer/Footer';
 import { Header } from './components/header/Header';
@@ -10,11 +11,13 @@ function App() {
         <div>
             <Header />
 
-            <MainSection />
+            <Container>
+                <MainSection />
 
-            <OfferSection />
+                <OfferSection />
 
-            <AboutSection />
+                <AboutSection />
+            </Container>
 
             <Footer />
         </div>
