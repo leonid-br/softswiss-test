@@ -1,0 +1,42 @@
+/* Базовые стили для кнопки */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    /* Стиль по умолчанию */
+    background-color: transparent;
+    color: black;
+    text-transform: uppercase;
+
+    /* Ховер эффекты по умолчанию */
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+/* Стиль для кнопки с жёлтым фоном */
+.btn--yellow {
+    background-color: yellow;
+    color: white;
+
+    &:hover {
+        background-color: darkorange; /* Темнее при наведении */
+    }
+}
+
+/* Стиль для кнопки с бордером и прозрачным фоном */
+.btn--outline {
+    background-color: transparent;
+    border-color: yellow;
+    color: yellow;
+
+    &:hover {
+        background-color: yellow;
+        color: white;
+    }
+}

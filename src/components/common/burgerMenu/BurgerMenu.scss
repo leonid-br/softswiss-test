@@ -1,0 +1,77 @@
+.burger-menu {
+    position: relative;
+}
+
+/* Бургер-иконка */
+.burger-icon {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+
+    span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: black;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/* Анимация превращения в крест */
+.burger-icon.open {
+    span:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+    }
+    span:nth-child(2) {
+        opacity: 0;
+    }
+    span:nth-child(3) {
+        transform: translateY(-13px) rotate(-45deg);
+    }
+}
+
+/* Стили для меню */
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 10px 0;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                display: block;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+/* Когда меню открыто */
+.menu--open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
