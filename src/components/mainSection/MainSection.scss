@@ -1,14 +1,15 @@
 @import '../../styles/variables.scss';
 
 .main-section {
+    overflow: hidden;
+
     position: relative;
-    // top: -110px;
+
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%);
     background-image: url('../../assets/images/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
-    /* Картинка, которая будет сверху */
     .main-section__image {
         position: absolute;
 
@@ -54,18 +55,46 @@
         }
     }
 
-    /* Адаптивность */
-    @media (max-width: 768px) {
+    @media (max-width: $tablet) {
         margin-left: -$mobile-container-padding;
         margin-right: -$mobile-container-padding;
-        // background-position: center -33%; /* картинка в фоне заезжает под хедер */
     }
 
-    @media (min-width: 769px) and (max-width: 1248px) {
-        // background-position: right 0; /* для планшетов фоновая картинка сдвигается вправо */
+    @media (min-width: 768px) and (max-width: $desktop) {
+        margin-left: -$tablet-container-padding;
+        margin-right: -$tablet-container-padding;
+
+        .main-section__content {
+            padding: 100px 0px 100px 30px;
+
+            .main-section__image {
+                top: 0;
+                left: 75%;
+                margin-right: 0;
+                transform: none;
+                scale: 0.8;
+            }
+
+            .main-section__text-container {
+                width: 420px;
+
+                .main-section__title {
+                    text-align: left;
+                    font-size: 48px;
+                }
+
+                .main-section__text {
+                    text-align: left;
+                    font-size: 22px;
+                }
+
+                .main-section__button {
+                    justify-content: left;
+                }
+            }
+        }
     }
 
     @media (min-width: 1249px) {
-        // background-position: left 10%; /* для больших экранов фоновая картинка отодвинута от левого края */
     }
 }

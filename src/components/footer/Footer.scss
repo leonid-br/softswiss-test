@@ -17,3 +17,9 @@
         color: $accent-color;
     }
 }
+
+@media ((min-width: 768px )and (max-width: $desktop)) {
+    .footer {
+        padding-bottom: 19px;
+    }
+}

@@ -1,11 +1,5 @@
 @import '../../styles/variables.scss';
 
-@media (max-width: 768px) {
-    .hide-on-mobile {
-        display: none;
-    }
-}
-
 .header {
     position: relative;
     z-index: 100;
@@ -20,5 +14,35 @@
     .header__logo {
         width: 71px;
         height: 24px;
+    }
+}
+
+@media (max-width: $tablet) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: $desktop) {
+    .header {
+        padding: 24px 90px 20px 80px;
+
+        .header__nav {
+            display: flex;
+
+            .header__nav-list {
+                display: flex;
+                margin-right: 50px;
+
+                li:nth-child(1) {
+                    margin-right: 50px;
+                }
+
+                .header__nav-button {
+                    color: $primary-text-color;
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }

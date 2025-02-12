@@ -21,6 +21,10 @@
     &:hover {
         background-color: rgba($accent-color, 0.6);
     }
+
+    @media ((min-width: 768px) and (max-width: $desktop)) {
+        padding: 14px 40px;
+    }
 }
 
 /* Стиль для кнопки с бордером и прозрачным фоном */

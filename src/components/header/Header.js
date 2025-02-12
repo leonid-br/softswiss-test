@@ -8,12 +8,24 @@ export const Header = () => {
         <header className="header">
             <Logo className="header__logo" />
 
-            <ul className="hide-on-mobile">
-                <li>Home</li>
-                <li>Products</li>
-            </ul>
-            <Basket className="hide-on-mobile" />
-            <BurgerMenu />
+            <div className="header__nav">
+                <ul className="hide-on-mobile header__nav-list">
+                    <li>
+                        <button type="button" className="header__nav-button">
+                            Home
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" className="header__nav-button">
+                            Products
+                        </button>
+                    </li>
+                </ul>
+
+                <Basket className="hide-on-mobile header__basket" />
+
+                <BurgerMenu />
+            </div>
         </header>
     );
 };

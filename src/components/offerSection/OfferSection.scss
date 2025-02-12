@@ -65,3 +65,27 @@
         }
     }
 }
+
+@media ((min-width: 768px )and (max-width: $desktop)) {
+    .offer-section {
+        margin-top: 55px;
+
+        .offer-section__title {
+            font-size: 24px;
+        }
+
+        .offer-section__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            li {
+                height: 335px;
+
+                .offer-section__item-content {
+                    padding: 0 30px 28px 30px;
+                }
+            }
+        }
+    }
+}

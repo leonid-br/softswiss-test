@@ -23,3 +23,23 @@
         color: $accent-color;
     }
 }
+
+@media ((min-width: 768px )and (max-width: $desktop)) {
+    .about-section {
+        margin-top: 55px;
+        padding-bottom: 53px;
+
+        .about-section__title {
+            font-size: 24px;
+        }
+
+        .about-section__text {
+            margin-top: 13px;
+            font-size: 16px;
+        }
+
+        .about-section__button {
+            font-size: 16px;
+        }
+    }
+}
