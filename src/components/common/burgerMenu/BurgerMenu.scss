@@ -2,14 +2,13 @@
 
 .burger-menu {
     display: none;
+    position: relative;
 
-    @media (max-width: $tablet) {
+    @media (max-width: 767px) {
         display: block;
     }
-    position: relative;
 }
 
-/* Бургер-иконка */
 .burger-icon {
     display: flex;
     flex-direction: column;
@@ -34,7 +33,6 @@
     }
 }
 
-/* Анимация превращения в крест */
 .burger-icon.open {
     span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
@@ -47,7 +45,6 @@
     }
 }
 
-/* Стили для меню */
 .menu {
     position: absolute;
     top: 30px;
@@ -81,7 +78,6 @@
     }
 }
 
-/* Когда меню открыто */
 .menu--open {
     opacity: 1;
     visibility: visible;
