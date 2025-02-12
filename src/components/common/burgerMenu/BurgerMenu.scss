@@ -1,7 +1,9 @@
+@import '../../../styles/variables';
+
 .burger-menu {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: $tablet) {
         display: block;
     }
     position: relative;
