@@ -1,0 +1,25 @@
+@import '../../styles/_variables';
+
+.about-section {
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    .about-section__title {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .about-section__text {
+        margin-top: 20px;
+
+        font-size: 14px;
+        opacity: 0.6;
+    }
+
+    .about-section__button {
+        margin-top: 20px;
+
+        font-size: 14px;
+        color: $accent-color;
+    }
+}
