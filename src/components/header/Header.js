@@ -1,11 +1,12 @@
 import { Basket, Logo } from '../../assets/icons';
-import BurgerMenu from '../common/burgerMenu/BurgerMenu';
+import { BurgerMenu } from '../common/burgerMenu/BurgerMenu';
+
 import './Header.scss';
 
 export const Header = () => {
     return (
         <header className="header">
-            <Logo />
+            <Logo className="header__logo" />
 
             <ul className="hide-on-mobile">
                 <li>Home</li>

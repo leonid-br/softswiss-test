@@ -7,10 +7,18 @@
 }
 
 .header {
+    position: relative;
+    z-index: 100;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding: 12px 20px;
     background-color: $header-background-color;
+
+    .header__logo {
+        width: 71px;
+        height: 24px;
+    }
 }
