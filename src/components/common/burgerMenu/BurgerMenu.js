@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import './BurgerMenu.scss';
+
 import { Basket } from '../../../assets/icons';
+
+import './BurgerMenu.scss';
 
 export const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,5 +33,3 @@ export const BurgerMenu = () => {
         </div>
     );
 };
-
-export default BurgerMenu;
