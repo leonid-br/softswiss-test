@@ -1,0 +1,71 @@
+@import '../../styles/variables.scss';
+
+.main-section {
+    position: relative;
+    // top: -110px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%);
+    background-image: url('../../assets/images/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Картинка, которая будет сверху */
+    .main-section__image {
+        position: absolute;
+
+        left: 50%;
+        top: -30%;
+        margin-right: -50%;
+        transform: translateX(-50%);
+
+        object-fit: cover;
+    }
+
+    .main-section__content {
+        padding: 250px 34px 44px 34px;
+
+        .main-section__title {
+            text-align: center;
+
+            font-size: 36px;
+            color: $primary-text-color;
+            line-height: 1;
+
+            span {
+                color: $logo-color;
+            }
+        }
+
+        .main-section__text {
+            text-align: center;
+            font-weight: 800;
+
+            margin-top: 17px;
+            color: $primary-text-color;
+
+            span {
+                color: $accent-color;
+            }
+        }
+
+        .main-section__button {
+            margin-top: 17px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+        margin-left: -$mobile-container-padding;
+        margin-right: -$mobile-container-padding;
+        // background-position: center -33%; /* картинка в фоне заезжает под хедер */
+    }
+
+    @media (min-width: 769px) and (max-width: 1248px) {
+        // background-position: right 0; /* для планшетов фоновая картинка сдвигается вправо */
+    }
+
+    @media (min-width: 1249px) {
+        // background-position: left 10%; /* для больших экранов фоновая картинка отодвинута от левого края */
+    }
+}
