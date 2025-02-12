@@ -9,12 +9,17 @@
 
     background-color: $background-color;
 
-    @media (max-width: $tablet) {
+    @media (max-width: 767px) {
         padding: 0 $mobile-container-padding;
     }
 
-    @media (min-width: 768px) and (max-width: $desktop) {
+    @media (min-width: $tablet) and (max-width: $desktop) {
         max-width: 100%;
         padding: 0 $tablet-container-padding;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 100%;
+        padding: 0 $desktop-container-padding;
     }
 }

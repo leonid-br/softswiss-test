@@ -1,4 +1,4 @@
-import { Basket, Logo } from '../../assets/icons';
+import { Basket, Logo, BasketHover } from '../../assets/icons';
 import { BurgerMenu } from '../common/burgerMenu/BurgerMenu';
 
 import './Header.scss';
@@ -15,6 +15,7 @@ export const Header = () => {
                             Home
                         </button>
                     </li>
+
                     <li>
                         <button type="button" className="header__nav-button">
                             Products
@@ -22,7 +23,10 @@ export const Header = () => {
                     </li>
                 </ul>
 
-                <Basket className="hide-on-mobile header__basket" />
+                <button className="hide-on-mobile header__basket-button">
+                    <Basket className="hide-on-mobile header__basket" />
+                    <BasketHover className="hide-on-mobile header__basket hover-icon" />
+                </button>
 
                 <BurgerMenu />
             </div>

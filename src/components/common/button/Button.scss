@@ -22,20 +22,25 @@
         background-color: rgba($accent-color, 0.6);
     }
 
-    @media ((min-width: 768px) and (max-width: $desktop)) {
+    @media (min-width: $tablet) {
         padding: 14px 40px;
     }
 }
 
 /* Стиль для кнопки с бордером и прозрачным фоном */
 .btn--outline {
+    margin-top: 22px;
+
     background-color: transparent;
     border: 2px solid $accent-color;
     color: $accent-color;
-    margin-top: 22px;
 
     &:hover {
         border-color: rgba($accent-color, 0.6);
         color: rgba($accent-color, 0.6);
+    }
+
+    @media (min-width: $desktop) {
+        padding: 14px 40px;
     }
 }

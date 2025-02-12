@@ -10,10 +10,18 @@
     }
 
     .about-section__text {
+        max-height: 50px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+
         margin-top: 20px;
 
         font-size: 14px;
         opacity: 0.6;
+    }
+
+    .about-section__toggle {
+        display: none;
     }
 
     .about-section__button {
@@ -21,10 +29,21 @@
 
         font-size: 14px;
         color: $accent-color;
+
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: rgba($accent-color, 0.6);
+        }
+    }
+
+    .about-section__toggle:checked + .about-section__text {
+        max-height: 1000px;
     }
 }
 
-@media ((min-width: 768px )and (max-width: $desktop)) {
+@media ((min-width: $tablet )and (max-width: $desktop)) {
     .about-section {
         margin-top: 55px;
         padding-bottom: 53px;
@@ -40,6 +59,27 @@
 
         .about-section__button {
             font-size: 16px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .about-section {
+        margin-top: 62px;
+        padding-bottom: 60px;
+
+        .about-section__title {
+            font-size: 32px;
+        }
+
+        .about-section__text {
+            margin-top: 17px;
+            font-size: 20px;
+        }
+
+        .about-section__button {
+            margin-top: 17px;
+            font-size: 20px;
         }
     }
 }

@@ -11,8 +11,9 @@
         margin-top: 30px;
 
         li {
-            border-radius: 10px;
             height: 320px;
+
+            border-radius: 10px;
             background: $offer-gradient;
 
             &:nth-child(1) {
@@ -20,6 +21,7 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+
                 margin-bottom: 30px;
             }
 
@@ -28,6 +30,7 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+
                 margin-bottom: 30px;
             }
 
@@ -36,6 +39,7 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+
                 margin-bottom: 30px;
             }
 
@@ -47,12 +51,14 @@
             }
 
             .offer-section__item-content {
-                height: 100%;
-                padding: 0 25px 35px 25px;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: start;
+
+                height: 100%;
+                padding: 0 25px 35px 25px;
+
                 .offer-section__item-title {
                     font-size: 40px;
                     line-height: 1;
@@ -85,6 +91,106 @@
                 .offer-section__item-content {
                     padding: 0 30px 28px 30px;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .offer-section {
+        margin-top: 58px;
+
+        .offer-section__title {
+            font-size: 32px;
+        }
+
+        .offer-section__list {
+            margin-top: 40px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 40px;
+            grid-template-areas:
+                'item1 item1'
+                'item2 item3'
+                'item4 item4';
+
+            li {
+                height: 350px;
+            }
+
+            li:nth-child(1) {
+                .offer-section__item-content {
+                    justify-content: flex-start;
+
+                    width: 735px;
+                    padding: 35px;
+
+                    .offer-section__item-title {
+                        font-size: 74px;
+                        font-weight: bold;
+                    }
+                    .offer-section__item-text {
+                        font-size: 26px;
+                    }
+                }
+                grid-area: item1;
+            }
+
+            li:nth-child(2) {
+                .offer-section__item-content {
+                    justify-content: flex-start;
+
+                    padding: 50px 0 35px 35px;
+
+                    .offer-section__item-title {
+                        width: 345px;
+
+                        font-size: 46px;
+                    }
+
+                    .offer-section__item-text {
+                        font-size: 24px;
+                    }
+                }
+                grid-area: item2;
+            }
+
+            li:nth-child(3) {
+                .offer-section__item-content {
+                    justify-content: flex-start;
+
+                    padding: 50px 0 35px 35px;
+
+                    .offer-section__item-title {
+                        width: 290px;
+
+                        font-size: 46px;
+                    }
+                    .offer-section__item-text {
+                        font-size: 24px;
+                    }
+                }
+                grid-area: item3;
+            }
+
+            li:nth-child(4) {
+                .offer-section__item-content {
+                    justify-content: flex-start;
+
+                    width: 735px;
+                    padding: 35px;
+
+                    .offer-section__item-title {
+                        font-size: 74px;
+                        font-weight: bold;
+                    }
+                    .offer-section__item-text {
+                        font-size: 26px;
+                    }
+                }
+                grid-area: item4;
             }
         }
     }

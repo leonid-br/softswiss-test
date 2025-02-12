@@ -4,6 +4,9 @@ export const AboutSection = () => {
     return (
         <section className="about-section">
             <h2 className="about-section__title">Embark on a space journey</h2>
+
+            <input type="checkbox" id="toggle-text" className="about-section__toggle" />
+
             <p className="about-section__text">
                 Travelling into space is one of the most exciting and unforgettable adventures that can change your life forever. And if you have ever dreamed
                 of exploring stars, planets and galaxies, then our company is ready to help you realize this dream. We offer a unique experience that will allow
@@ -12,9 +15,9 @@ export const AboutSection = () => {
                 adventure in space. We offer various options for space excursions.
             </p>
 
-            <button type="button" className="about-section__button">
+            <label htmlFor="toggle-text" className="about-section__button">
                 Read more
-            </button>
+            </label>
         </section>
     );
 };
