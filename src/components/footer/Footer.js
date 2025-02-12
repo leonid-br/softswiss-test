@@ -1,10 +1,12 @@
 import { Rocket } from '../../assets/icons';
 
+import './Footer.scss';
+
 export const Footer = () => {
     return (
-        <footer>
+        <footer className="footer">
             <Rocket />
-            <p>Exciting space adventure!</p>
+            <p className="footer__text">Exciting space adventure!</p>
         </footer>
     );
 };

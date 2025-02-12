@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-bottom: 19px;
+
+    background-color: $footer-background-color;
+
+    .footer__text {
+        font-size: 18px;
+        line-height: 1.5;
+
+        color: $accent-color;
+    }
+}
