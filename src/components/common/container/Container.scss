@@ -1,15 +1,18 @@
+@import '../../../styles/variables.scss';
+
 .container {
     width: 100%;
     max-width: 1248px;
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 0 $desktop-container-padding;
+    background-color: $background-color;
 
     @media (max-width: 1248px) {
         max-width: 100%;
-        padding: 0 30px;
+        padding: 0 $tablet-container-padding;
     }
 
     @media (max-width: 768px) {
-        padding: 0 20px;
+        padding: 0 $mobile-container-padding;
     }
 }
