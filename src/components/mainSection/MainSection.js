@@ -7,7 +7,7 @@ export const MainSection = () => {
     return (
         <section className="main-section">
             <div className="main-section__content">
-                <img src={earthImage} alt="Main Image" className="main-section__image" />
+                <img src={earthImage} alt="earth" className="main-section__image" />
 
                 <div className="main-section__text-container">
                     <h1 className="main-section__title">
